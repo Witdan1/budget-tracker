@@ -1,20 +1,12 @@
 {
   "cli": {
-    "version": ">= 7.8.6",
-    "appVersionSource": "local"
+    "version": ">= 7.8.6"
   },
   "build": {
     "preview": {
       "distribution": "internal",
       "android": {
-        "buildType": "apk",
-        "gradleCommand": ":app:assembleRelease"
-      },
-      "env": {
-        "NODE_ENV": "production"
-      },
-      "cache": {
-        "disabled": false
+        "buildType": "apk"
       }
     },
     "production": {
