@@ -10,9 +10,6 @@
     "android": {
       "package": "com.yourname.budgettracker",
       "versionCode": 1
-    },
-    "plugins": [
-      "expo-font"
-    ]
+    }
   }
 }

@@ -1,9 +1,9 @@
-name: Build APK
+name: Build Android APK
 
 on:
-  workflow_dispatch:
   push:
     branches: [ main ]
+  workflow_dispatch:
 
 jobs:
   build:
@@ -30,11 +30,11 @@ jobs:
       env:
         EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
         
-    - name: Build APK
+    - name: Build Android APK
       run: eas build -p android --profile preview --non-interactive --clear-cache
       env:
         EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
-        
+      
     - name: Upload APK artifact
       uses: actions/upload-artifact@v4
       with:
