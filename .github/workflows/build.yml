@@ -26,7 +26,7 @@ jobs:
       run: npm ci
       
     - name: Initialize EAS project
-      run: eas init --non-interactive
+      run: eas init --non-interactive --force
       env:
         EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
         
