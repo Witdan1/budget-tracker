@@ -1,1 +1,1 @@
-{ "cli": { "version": ">= 7.8.6", "appVersionSource": "local" }, "build": { "preview": { "distribution": "internal", "android": { "buildType": "apk", "gradleCommand": ":app:assembleRelease" }, "env": { "NODE_ENV": "production" } } } }
+{ "cli": { "version": ">= 7.8.6", "appVersionSource": "local" }, "build": { "preview": { "distribution": "internal", "android": { "buildType": "apk", "gradleCommand": ":app:assembleRelease" }, "env": { "NODE_ENV": "production" } }, "production": { "android": { "buildType": "apk" } } } }
