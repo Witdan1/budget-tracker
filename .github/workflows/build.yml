@@ -26,7 +26,7 @@ jobs:
       run: npm install
       
     - name: Login to Expo
-      run: eas login --non-interactive
+      run: echo "$EXPO_TOKEN" | eas login
       env:
         EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
         
