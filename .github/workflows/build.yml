@@ -26,12 +26,14 @@ jobs:
       run: npm install
       
     - name: Login to Expo
-      run: echo "$EXPO_TOKEN" | eas login
-      env:
-        EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
+      run: |
+        export EXPO_TOKEN=${{ secrets.EXPO_TOKEN }}
+        eas login
         
     - name: Build Android APK
       run: eas build -p android --profile preview --non-interactive
+      env:
+        EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
       
     - name: Upload APK artifact
       uses: actions/upload-artifact@v4
