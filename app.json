@@ -6,9 +6,13 @@
     "orientation": "portrait",
     "userInterfaceStyle": "automatic",
     "assetBundlePatterns": ["**/*"],
+    "platforms": ["ios", "android", "web"],
     "android": {
       "package": "com.yourname.budgettracker",
-      "versionCode": 1
+      "versionCode": 1,
+      "compileSdkVersion": 34,
+      "targetSdkVersion": 34,
+      "buildToolsVersion": "34.0.0"
     }
   }
 }
