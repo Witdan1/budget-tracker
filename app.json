@@ -7,24 +7,8 @@
     "userInterfaceStyle": "automatic",
     "assetBundlePatterns": ["**/*"],
     "android": {
-      "package": "com.yourname.budgettracker", 
-      "versionCode": 1,
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
-      }
-    },
-    "plugins": [
-      [
-        "expo-build-properties",
-        {
-          "android": {
-            "compileSdkVersion": 34,
-            "targetSdkVersion": 34,
-            "buildToolsVersion": "34.0.0"
-          }
-        }
-      ]
-    ]
+      "package": "com.yourname.budgettracker",
+      "versionCode": 1
+    }
   }
 }
